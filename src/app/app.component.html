@@ -1,6 +1,17 @@
-<div class="container">
-  <h1>Angular Bootstrap</h1>
-  <div>
+<div class="container d-flex flex-column gap-3 p-3">
+  <div class="row">
+    <h1>Angular Bootstrap</h1>
+  </div>
+  <div class="row">
+    <h2>Theme</h2>
+    <div>
+      <select [(ngModel)]="theme" (ngModelChange)="themeSelected()" class="form-select">
+        <option ngValue="light">Light</option>
+        <option ngValue="dark">Dark</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
     <h2>Buttons</h2>
     <div class="d-flex gap-2">
       <button type="button" class="btn btn-primary">Primary</button>

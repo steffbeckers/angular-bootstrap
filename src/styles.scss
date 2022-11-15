@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+.light-theme {
+  --bs-body-color: #1e1e1e;
+  --bs-body-bg: #eeeeee;
+}
+
+.dark-theme {
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(3, 29, 42);
+}
