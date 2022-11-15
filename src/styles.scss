@@ -1,9 +1,14 @@
+.btn-primary {
+  background-color: var(--bs-primary);
+}
+
 .light-theme {
   --bs-body-color: #1e1e1e;
   --bs-body-bg: #eeeeee;
 }
 
 .dark-theme {
+  --bs-primary: #39b5f3;
   --bs-body-color: #ffffff;
-  --bs-body-bg: rgb(3, 29, 42);
+  --bs-body-bg: #031d2a;
 }
