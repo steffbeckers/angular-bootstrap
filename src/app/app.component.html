@@ -5,9 +5,8 @@
   <div class="row">
     <h2>Theme</h2>
     <div>
-      <select [(ngModel)]="theme" (ngModelChange)="themeSelected()" class="form-select">
-        <option ngValue="light">Light</option>
-        <option ngValue="dark">Dark</option>
+      <select [(ngModel)]="themeService.theme" (ngModelChange)="themeService.changeTheme()" class="form-select">
+        <option *ngFor="let theme of themeService.themes" [ngValue]="theme.key">{{ theme.name }}</option>
       </select>
     </div>
   </div>
